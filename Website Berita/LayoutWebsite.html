@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Style the sidenav links */
+.sidenav a {
+  float: left;
+  color: #121212;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 20%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 60%;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+</head>
+
+<body>
+<div class="header">
+  <h1>CAKRAWALA NEWS</h1>
+  <p>Terdepan dan Terpercaya</p>
+</div>
+
+<div class="topnav">
+  <a href="#">Home</a>
+  <a href="#">Puisi</a>
+  <a href="#">Trending</a>
+  <a href="#">Finance</a>
+  <a href="#">Saham</a>
+  <a href="#">Retrogade</a>
+</div>
+
+
+<div class="column side">
+  <h2>Tentang</h2>
+  <ul><a href="#">Visi Misi</a></ul>
+  <ul><a href="#">Jajaran Direksi</a></ul>
+  <ul><a href="#">Laporan Berita</a></ul>
+  <ul><a href="#">Informasi Beasiswa</a></ul>
+  
+</div>
+<div class="row">
+  <div class="column middle">
+    <h2>Kita adalah Dua Penulis Mabuk yang Gagal jadi Sepasang : Sebuah puisi yang menggentarkan jagat dunia</h2>
+    <p>Sze Valjan, Seorang penyair pada platform Medium, beberapa waktu lalu sukses mencuri hati para pecinta puisi. Bagaimana tidak? pada puisi terbarunya, ia berhasil menggabungkan sesuatu yang tidak hanya unik, namun juga memainkan perasaan para pembaca. Berikut adalah Puisinya :</p>
+    <p> 
+        Kita adalah dua penulis mabuk yang gagal jadi sepasang, mengiris gerimis jadi serangkai cerita manis, menyumpahi tangis dengan kekuatan magis, berdalih bahwa kita adalah panitera yang optimis.
+    </p>
+
+
+    <p>
+        Jika kalian ingin mengakses puisinya lebih lengkap, kalian bisa mengaksesnya pada link tertera yang telah kami sediakan diatas....
+    </p>
+    <button class="btn">Read More....</button>
+
+    <h2>Kita adalah Dua Penulis Mabuk yang Gagal jadi Sepasang : Sebuah puisi yang menggentarkan jagat dunia</h2>
+    <p>Sze Valjan, Seorang penyair pada platform Medium, beberapa waktu lalu sukses mencuri hati para pecinta puisi. Bagaimana tidak? pada puisi terbarunya, ia berhasil menggabungkan sesuatu yang tidak hanya unik, namun juga memainkan perasaan para pembaca. Berikut adalah Puisinya :</p>
+    <button class="btn">Read More....</button>
+  </div>
+  
+  <div class="column side">
+    <h2>Hot Topic</h2>
+    <li> Russia vs Ukraine : A Cossack Wars </li>
+    <li> Unity Escalating Price </li>
+    <li> Schematics undang JKT lagi!?!?!?!? </li>
+    <li> Der Kampf : Buku keramat PBO </li>
+    
+  </div>
+</div>
+
+<div class="footer">
+  <p>Our Turf : Jl. Groove Street no. 632, Keputih, Sukolilo, Surabaya, Jawa Ujung</p>
+  <p>Contact us at : Ardi - (+62) 812-6734-9990</p>
+</div>
+  
+</body>
+</html>
+
+
